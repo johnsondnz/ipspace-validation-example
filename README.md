@@ -180,7 +180,7 @@ Ideally in our example we would test each key's data as well. This would ensure 
 Pre-commit comes with great documentation and core built in hooks for you to use today. Building test cases is super easy and fast to implement. I encourage you to play and let me know what you come up with
 
 ## Example pre-commit hooks
-My hook examples can be found here on [GitLab](https://gitlab.com/johnsondnz/pre-commit-example) and a [demo playbook](https://gitlab.com/depereo/cloudbuilders-demo) using Arista container EOS here courtesy of [@depereo](https://gitlab.com/depereo) for anyone wanting to play with any of these examples.
+My hook examples can be found here; [example](https://github.com/johnsondnz/ipspace-validation-example/tree/master/example) and a [demo playbook](https://gitlab.com/depereo/cloudbuilders-demo) using Arista container EOS here courtesy of [@depereo](https://gitlab.com/depereo) for anyone wanting to play with any of these examples.
 
 ## Notes
 Published for [ipSpace - Building Network Automation Solutions](https://my.ipspace.net/bin/list?id=NetAutSol), Validation, Error Handling and Unit Tests module real world examples.
