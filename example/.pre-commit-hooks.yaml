@@ -1,0 +1,33 @@
+---
+- id: vlan-duplicates
+  name: Duplicate VLANs
+  description: Prevent duplicate VLANs
+  entry: vlan-duplicates
+  language: python
+  files: '.+vars/main.yml'
+  types: [ yaml ]
+
+- id: vlan-keys
+  name: VLAN Keys
+  description: Ensure VLANs keys are present for each VLAN
+  entry: vlan-keys
+  language: python
+  files: '.+vars/main.yml'
+  types: [ yaml ]
+
+- id: vlan-tags-exist
+  name: VLAN to handover Tags
+  description: Ensure tags on VLANS exist on a Handover
+  entry: vlan-tags-exist
+  language: python
+  files: '.+vars/main.yml'
+  types: [ yaml ]
+
+- id: ansible-lint
+  name: Ansible Lint for Playbooks and Roles
+  description: Checks that ansible roles and playbooks
+  entry: ansible-lint
+  require_serial: true
+  language: python
+  files: '^.*(playbooks/[^/]+/[^/]+/[a-zA-Z_-]+\.yml|roles/.*)'  # match any playbook or anything in a role
+  types: [ file, directory ]
